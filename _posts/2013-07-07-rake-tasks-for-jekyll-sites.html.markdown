@@ -37,6 +37,6 @@ task :server do
 end
 ```
 
-Now when I work on my blog, I simple open up a terminal and run `rake server`. This create a Jekyll development server
-that watches for changes and a Compass process that watches for changes in the Sass files. The output from both 
-processes is piped to the same terminal window. 
+Now when I work on my blog, I spin up my terminal and run `rake server`. This create a Jekyll development server
+that watches for changes to my site files and a Compass process that watches for changes to my Sass files. The output 
+from both processes is piped to the same terminal window. 
