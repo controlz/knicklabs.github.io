@@ -11,7 +11,7 @@ A powerful feature of building static sites with Jekyll is that you can create R
 tasks. Rake is a software task management tool for Ruby and its easy to use. 
 
 To get started using Rake with Jekyll, create a file named `Rakefile` in the root of your project directory. Note that
-there is no extension for this file. Inside the file, you can define a number of tasks. You define tasks as follows by 
+there is no extension for this file. Inside the file, you can define a number of tasks. You define tasks by 
 passing a block of code to be executed. For example:
 
 ```ruby
