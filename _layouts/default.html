@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ page.title }} | {{ site.name }}</title>
+
+    <meta name="decription" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Gudea:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/site.css">
+  </head>
+  <body>    
+    <nav>
+      <ul>
+        <li><a href="/">Articles</a></li>
+        <li><a href="/author">Author</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="logo">
+        <img src="/assets/img/logo.png">
+      </div>
+      <hgroup>
+        <h1>{{ site.name }}</h1>
+        <h3>{{ site.slogan }}</h3>
+      </hgroup>
+    </header>
+
+    <div id="main">
+      {{ content }}
+    </div>
+
+    <footer>
+      <p class="about">
+        Knicklabs is designed, developed, and written by Nickolas Kenyeres, a web developer from Niagara, Canada.
+        This website is powered by <a href="http://jekyllrb.com">Jekyll</a> and hosted on 
+        <a href="http://pages.github.com">GitHub Pages</a>.
+      </p>
+
+      <p class="copyleft">
+        Except where otherwise noted, the content of this website is licensed under the
+        <a href="{{ site.license.content.uri }}">{{ site.license.content.type }}</a> 
+        license. The source code for this website is licensed under the 
+        <a href="{{ site.license.code.uri }}">{{ site.license.code.type }}</a>
+        license and is available on <a href="http://github.com/knicklabs/knicklabs.github.io">GitHub</a>.
+      </p>
+    </footer>
+  </body>
+</html>

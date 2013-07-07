@@ -1,0 +1,9 @@
+# Jekyll HTML output
+_site
+
+# Sass cache
+.sass-cache
+
+# Other junk
+.DS_Store
+.idea

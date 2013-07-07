@@ -1,0 +1,19 @@
+name:       "@knicklabs"
+slogan:     "Articles by Nickolas Kenyeres, Web Developer"
+
+description: |
+  The personal blog of Nickolas Kenyeres includes discussions of code, 
+  community, cycling, running, and gardening.
+
+license:
+  content:
+    type: Creative Commons Attribution-ShareAlike 2.5 Canada
+    uri:  http://creativecommons.org/licenses/by-sa/2.5/ca/deed.en_US
+  code:
+    type: MIT
+    uri:  http://opensource.org/licenses/MIT
+
+
+pygments:   true
+permalink:  /articles/:title
+markdown:   redcarpet

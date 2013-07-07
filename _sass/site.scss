@@ -1,0 +1,167 @@
+// Reset all the things. Note that this stylesheet comes
+// from the foundation gem.
+@import 'normalize';
+
+// Syntax highlighting
+@import 'syntax';
+
+// Variables
+@import 'vars-foundation';
+@import 'vars-site';
+
+// Use grid system from Foundation framework
+@import 'foundation/components/global';
+@import 'foundation/components/grid';
+@import 'foundation/components/visibility';
+@import 'foundation/components/block-grid';
+@import 'foundation/components/type';
+@import 'foundation/components/inline-lists';
+@import 'foundation/components/thumbs';
+
+// Useful compass bits
+@import 'compass/css3';
+
+html {
+  height: 100%;
+}
+
+body {
+  background-origin: fixed;
+  border-top: 5px solid #222;
+  padding: 2em;
+}
+
+.page-title {
+  border-bottom: 1px solid darken($body-bg, 10%);
+}
+
+img.left {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+img.right {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.meta {
+  color: $subheader-font-color;
+  margin-bottom: 0;
+}
+
+.meta + .page-title {
+  margin-top: 0;
+}
+
+body > nav {
+  @include grid-row();
+
+  ul {
+    @include inline-list();
+    @extend .right;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+body > header {
+  @include grid-row();
+  padding: 1em 0 2em 0;
+  text-align: center;
+
+  .logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  hgroup {
+    h1, h3 {
+      margin: 0;
+    }
+
+    h3 {
+      @extend h5;
+      color: $subheader-font-color;
+      font-weight: normal;
+    }
+  }
+}
+
+body > footer {
+  @include grid-row();
+  margin-top: 2em;
+  border-top: 1px solid darken($body-bg, 10%);
+  padding: 1em 0 2em 0;
+
+  .about, .copyleft {
+    font-size: 80%;
+  }
+}
+
+#main {
+  @include grid-row();
+}
+
+#articles {
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .article {
+    position: relative;
+
+    border-bottom: 1px solid darken($body-bg, 10%);
+    padding: .5em 25% .5em 0;
+
+    time {
+      position: absolute;
+      top: .8em;
+      right: 0;
+      font-size: 80%;
+
+      color: $subheader-font-color;
+    }
+  }
+
+  li:last-child .article {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 767px) { 
+  #articles {
+    .article {
+      padding-right: 0;
+
+      time {
+        display: block;
+        position: static;
+        top: auto;
+        right: auto;
+      }
+    }
+  }
+}
+
